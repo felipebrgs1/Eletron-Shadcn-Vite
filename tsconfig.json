@@ -10,11 +10,18 @@
     "src/preload/*.d.ts"
   ],
   "compilerOptions": {
-    "target": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2022"
+    ],
     "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "nodenext",
     "jsx": "react-jsx",
     "baseUrl": ".",
+    "skipLibCheck": true,
     "paths": {
       "@/*": [
         "src/renderer/src/*"
